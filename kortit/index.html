@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>Ventti-peli</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="styles.css" rel="stylesheet"> 
+ 
+</head>
+<body>
+<header></header>
+    <main>
+		<br>
+		<h2>Jakajan käsi</h2>
+        <section id="dealer-hand" class="hand">
+            <article id="j1" class="card">
+			</article>
+			<article id="j2" class="card">
+			</article>
+			<article id="j3" class="card">
+			</article>
+			<article id="j4" class="card">
+			</article>
+			<article id="j5" class="card">
+			</article>
+        </section>
+		
+		<h2>Pelaajan käsi</h2>
+        <section id="player-hand" class="hand">
+            <article id="p1" class="card">
+			</article>
+			<article id="p2" class="card">
+			</article>
+			<article id="p3" class="card">
+			</article>
+			<article id="p4" class="card">
+			</article>
+			<article id="p5" class="card">
+			</article>
+        </section>
+		
+        <section id="controls">
+            <button onclick="nostakortti()">Nosta</button>
+            <button onclick="jaa()">Jää</button>
+			<br>
+        </section>
+    </main>
+	<div id="loppu">
+    <div id="overlay" class="hidden">
+        <div id="gameover">
+		<button onclick="pelaaUudestaan()">Uusi peli</button>
+		</div>
+    </div>
+	</div>
+<script src="peli.js"></script>
+</body>
+</html>

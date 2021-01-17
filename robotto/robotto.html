@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Robotti Robotto</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+.keskitetty {
+    text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+<div class="keskitetty">
+	<form name="lomake">
+	<br>
+		<input type="text" name="kasky" placeholder="Kirjoita käsky">
+	<br>
+	<br>
+		<input type="button" value=" Suorita " onclick="suorita()">
+		<input type="button" value=" Tyhjennä " onclick="tyhjenna()">
+	</form>
+	<br>
+<p id="kuva">
+<img class="robo" src="perus.png" width=35%>
+<br>
+<strong> Robotto ready for action </strong>
+</p>
+</div>
+
+<script>
+function suorita() {
+var komento = document.forms["lomake"]["kasky"].value;
+if (komento == "robotto.wave();") {
+	document.getElementById("kuva").innerHTML = "<img class='robo' src='perus.png' width=40%>" + "<img class='robo' src='heiluu.png' width=40%>" + "<strong> Hey there, I'm waving at you! </strong>";
+	w3.slideshow(".robo", 1000);
+}
+else if (komento == "robotto.stop();") {
+	document.getElementById("kuva").innerHTML = "<img class='robo' src='perus.png' width=40%>" + "<strong> Robotto rests at your command. </strong>";
+}
+else {
+document.getElementById("kuva").innerHTML = "Syntax error! Yritä uudestaan!";
+}
+}
+
+function tyhjenna() {
+document.forms["lomake"]["kasky"].value = "";
+var arvo = document.getElementById("kuva").innerHTML;
+if (arvo == ("Syntax error! Yritä uudestaan!")) {
+document.getElementById("kuva").innerHTML = "Robotto odottaa käskyä!";
+}
+}
+
+</script>
+</body>	
+</html> 

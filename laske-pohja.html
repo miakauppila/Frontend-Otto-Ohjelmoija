@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Ohjelma</title>
+<style>
+.keski {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="keski">
+<br>
+	<form name="luvut">
+		<input type="number" min="1" max="10" name="luku1">
+	<br />
+	<br />
+		<input type="number" min="1" max="10" name="luku2">
+	<br />
+	<br />
+		<input type="button" value=" Laske " onclick="Laske()">
+		<input type="button" value=" Tyhjennä " onclick="Tyhjenna()">
+	</form>
+<p id="summadiv"></p>
+<p id="erotusdiv"></p>
+<p id="tulodiv"></p>
+<p id="jakodiv"></p>
+<p id="listadiv"></p>
+
+</div>
+
+<script>
+function Laske()
+{
+var luku1 = Number(document.forms["luvut"]["luku1"].value);
+var luku2 = Number(document.forms["luvut"]["luku2"].value);
+switch (luku1>10 || luku2>10 || luku1<1 || luku2<1) {
+case true:
+	window.alert("Luvut eivät ole välillä 1-10");
+	break;
+default:
+var summa = luku1 + luku2;
+document.getElementById("summadiv").innerHTML = "Summa: " + summa;
+var erotus = luku1 - luku2;
+document.getElementById("erotusdiv").innerHTML = "Erotus: " + erotus;
+var tulo = luku1 * luku2;
+document.getElementById("tulodiv").innerHTML = "Tulo: " + tulo;
+var jako = luku1 / luku2;
+document.getElementById("jakodiv").innerHTML = "Jakolasku: " + jako;
+
+var lista = "";
+var i = 0;
+if (luku1 <= luku2) {
+for (i = luku1; i<=luku2; i++){
+lista = lista + i + " ";
+}
+} else {
+for (i = luku2; i<=luku1; i++){
+lista = lista + i + " ";
+}
+}
+document.getElementById("listadiv").innerHTML = "Luvut järjestyksessä ovat " + lista;
+}
+}
+
+function Tyhjenna()
+{
+document.getElementById("summadiv").innerHTML = "";
+document.getElementById("erotusdiv").innerHTML = "";
+document.getElementById("tulodiv").innerHTML = "";
+document.getElementById("jakodiv").innerHTML = "";
+document.getElementById("listadiv").innerHTML = "";
+document.forms["luvut"]["luku1"].value = "";
+document.forms["luvut"]["luku2"].value = "";
+}
+
+</script>
+</body>	
+</html> 

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fi">
+<title>Otto Ohjelmoija</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo_favicon.png" type="image/png" sizes="16x16">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.w3-myFont {
+font-family: "Lexend Zetta", sans-serif;
+}
+a.linkki:link {
+  font-weight: bold;
+}
+a.linkki:visited {
+  color: gray;
+}
+a.linkki:hover {
+  font-weight: bold;
+}
+.iframe-containerVentti {
+  overflow: hidden;
+  height: 670px;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+.iframe-containerVentti {
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+}
+}
+.iframe-containerVentti iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+} 
+.iframe-container {
+  overflow: hidden;
+  padding-top: 75.00%;
+  position: relative;
+}
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+} 
+</style>
+<body class="w3-black">
+
+<!-- Icon Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Image in top left corner -->
+  <img src="img/logo2.png" alt="Otto Ohjelmoija logo" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>KOTI</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ESITTELY</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJEKTIT</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>YHTEYS</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="topNavbar" role="navigation">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">KOTI</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ESITTELY</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJEKTIT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">YHTEYS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div id="main" role="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-center w3-black" style="padding-top:47px; padding-bottom:47px" id="home">
+    <h1 class="w3-myFont w3-xxxlarge"><span class="w3-hide-small">Otto Ohjelmoija</span></h1>
+   <div class="w3-hide-large w3-hide-medium" id="logo">
+   <img src="img/logo2_phone.png" alt="Otto Ohjelmoija logo" style="max-width:100%">
+   </div>
+  </header>
+  
+  <div class="w3-display-container w3-black">
+  <img src="img/man.jpg" alt="Otto Ohjelmoija etusivun kuva" style="width:100%">
+   <div class="w3-display-topright w3-padding-32" style="padding-right: 10px; padding-left:10px">
+    <span class="w3-tag w3-center w3-large w3-hide-small">Ohjelmointia, opastusta ja webkehitystä</span>
+  </div>
+  
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-auto">
+  <div class="w3-container w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey"><span class="w3-hide-small">Mikä on Otto Ohjelmoija?</span> <span class="w3-hide-large w3-hide-medium w3-left-align">Ohjelmointia, opastusta ja webkehitystä</span></h2> 
+    <hr style="width:200px" class="w3-opacity">
+	<div class="w3-justify">
+    <p><span class="w3-hide-large w3-hide-medium">Mikä on Otto Ohjelmoija? </span>Takuulla dynaaminen ja energinen kumppani! Koodaus on mielestämme kivaa ja mielekästä hommaa. Meillä tehdään töitä reippaalla otteella, sovittaen sujuvasti yhteen teknologia, toimivuus, design ja käyttömukavuus. 
+	</p>
+	<p>
+	Otto Ohjelmoijan tarina alkoi vuonna 2015. Otto perusti oman yrityksen, koska tiesi, että markkinat arvostavat huolella tehtyä, yksilöllistä työtä ja toimivaa koodia.  Yrityksemme löysi nopeasti loistavia asiakkaita, joiden kanssa tehty antoisa yhteistyö kehitti ja kasvatti toimintaamme. Nykyisin meillä työskentelee kolme aikaansaavaa osaajaa. Otto, Salla ja Pia ovat valmiina auttamaan teitä löytämään juuri teille sopivan ratkaisun.  
+	</p>
+	<p>
+	Tarjoamme webkehitystä moderneilla teknologioilla. Erilaiset ohjelmointiprojektit kuuluvat ydinosaamisemme. Tarjoamme myös räätälöityä koulutusta mm. sisällönhallintajärjestelmistä.
+	</p>
+	
+	<a href="#projects" class="w3-button w3-light-grey w3-padding-large w3-section">Lue lisää projekteistamme</a>
+	
+    <h3 class="w3-padding-16 w3-text-light-grey">Taitomme</h3>
+    <p class="w3-wide">Modernit teknologiat: mm. HTML, CSS, Javascript, React, Java, Python, node.js</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design: visuaalinen suunnittelu, CMS, SEO</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Adobe Photoshop / Illustrator</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+	<br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partneria
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Tyytyväistä Asiakasta
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Onnistunutta Projektia
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15000+</span><br>
+        Tuntia Koodausta
+      </div>
+    </div>
+	
+
+    <!-- Team section -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Me voimme auttaa!</h3>  
+    <img src="img/team1.jpg" alt="Otto O." class="w3-left w3-circle w3-margin-right" style="width:90px">
+    <p><span class="w3-large w3-margin-right">Otto O.</span> Ohjelmoija</p>
+    <p>Ohjelmointi on jatkuvaa kehitystä. Tylsää hetkeä ei tule, kun opiskelee joka päivä jotain uutta.</p><br>
+    
+    <img src="img/team2.jpg" alt="Sanna S." class="w3-left w3-circle w3-margin-right" style="width:90px">
+    <p><span class="w3-large w3-margin-right">Sanna S.</span> Suunnittelija</p>
+    <p>Erikoisosaamistani on visuaalinen suunnittelu ja web design, työssäni etsin kaunista harmoniaa.</p><br>
+	
+	<img src="img/team3.jpg" alt="Pia P." class="w3-left w3-circle w3-margin-right" style="width:90px">
+    <p><span class="w3-large w3-margin-right">Pia P.</span> Projektit </p>
+    <p>Koodaamisen lisäksi projektinhallinta ja koulutus ovat minulle ykkösjuttuja.</p>
+	
+  <!-- End About Section -->
+  </div>
+   </div>
+   </div>
+  
+  <!-- Projects Section -->
+  <div class="w3-auto">
+  <div class="w3-padding-64 w3-container w3-justify" id="projects">
+    <h2 class="w3-text-light-grey">Projektimme</h2>
+    <hr style="width:230px" class="w3-opacity">
+
+    <!-- Grid to split the page, w3-row-padding adds 8px between the columns -->
+    <div class="w3-row-padding" style="margin:0 -16px"> 
+      <div class="w3-container w3-half">
+	  <h3 class="w3-padding-24 w3-text-light-grey">Laskuri</h3> 
+	  <p>Teimme pienen laskurin, jolla voi laskea syötettyjen lukujen peruslaskutoimitukset. Laskuri on tehty Javascript-ohjelmointikielellä niin, että laskuri hyväksyy vain lukuja, jotka ovat välillä 1-10. Aloittaessamme uutta projektia varaamme aina runsaasti aikaa suunnitteluun, jotta on selkeää mitä asiakas haluaa. Määritykset ohjelmistotuotteeseen tehdään aina kunkin asiakkaan tarpeiden perusteella. </p><br>
+    
+    <div class="w3-center">
+      <iframe src="laske-pohja.html" title="Laskuri projekti" style="background-color: #e6fffa; border:none; height:340px; width:80%"></iframe>
+    </div>
+      </div>
+
+      <div class="w3-container w3-half">
+	   <h3 class="w3-padding-24 w3-text-light-grey">Robotto</h3> 
+	  <p>Tämä oli hauska projekti! Kokeile mitä tapahtuu käskyllä "robotto.wave();". Huomaa, että Robotto on tarkka tyyppi ja vaatii käskyn täysin oikein kirjoitettuna. Jos haluat pysäyttää robotin, niin käytä käskyä "robotto.stop();". Ominaisuudet kirjoitetaan robotin lähdekoodiin ja niitä voidaan muuttaa tarpeen mukaan. Kun robotin ensimmäinen versio on ohjelmoitu, voidaan alkaa jatkokehitys ja pohtia tarvittavia lisäominaisuuksia.  </p><br>
+    <div class="w3-center">
+      <iframe src="robotto/robotto.html" title="Robotto projekti" style="background-color: rgb(255,255,128); border:none; height:340px; width:80%"></iframe>
+    </div>
+      </div>
+    <!-- End grid -->
+	
+    </div>
+	
+	<div class="w3-content" style="max-width:750px">
+	<br>
+	<h3 class="w3-padding-24 w3-text-light-grey">Ventti</h3> 
+	  <p>Tervetuloa pelaamaan Ventti-peliä! Pelin säännöt ovat yksinkertaiset: tarkoitus on saada korteilla summa 21. Voit päättää otatko lisää kortteja vai jäätkö. Jos summasi ylittää 21, niin häviät heti. Ässän arvo on aina yksi. Jos saat 5 korttia pöytään niin voitat, vaikka summasi olisi alle 21.</p> 
+	  
+	  <p>Kuten arvaat, on venteistä lukemattomia eri versioita eri säännöillä. Tässä pelissä jakaja voittaa, jos molemmilla on sama summa. Kaikki säännöt ohjelmoidaan pelin taustalle halutulla tavalla.</p><br>
+	<div class="iframe-containerVentti">
+	 <iframe src="kortit/index.html" title="Ventti-peli"></iframe>
+	</div>
+	</div>
+  <!-- End Projects Section -->
+  </div>
+   </div>
+
+  <!-- Contact Section -->
+  <div class="w3-auto">
+  <div class="w3-container w3-padding-64 w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Ota yhteyttä</h2>
+    <hr style="width:230px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Neulastie 8, 00410 Helsinki</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Puh: +358 50 3331234</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: otto@ohjelmoija.fi</p>
+    </div><br>
+    <p>Lähetä viesti, projekti-idea tai hintapyyntö. Kerromme mielellämme lisää.</p>
+	
+	<div class="w3-section">
+    <form name="yhteydenotto" action="/action_page.php" method="post" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nimi" required name="Nimi" aria-label="Nimi"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Sähköposti" required name="Email" aria-label="Sähköposti"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Aihe" required name="Aihe" aria-label="Aihe"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Viesti" required name="Viesti" aria-label="Viesti"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> LÄHETÄ VIESTI
+        </button>
+      </p>
+    </form>
+	</div>
+    <br>
+	<div class="w3-section" style="max-width:450px">
+    <p>Näin löydät toimistomme:</p> 
+	<div class="iframe-container">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.6908196507247!2d24.849168715691707!3d60.25203244374084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df6531bf62291%3A0xf4b80c767b71c5ba!2sNeulastie%208%2C%2000410%20Helsinki!5e0!3m2!1sfi!2sfi!4v1568103950691!5m2!1sfi!2sfi" title="Google-kartta toimiston sijainnista"></iframe>
+	</div>
+	 </div>
+  <!-- End Contact Section -->
+  </div>
+  </div>
+  
+    <!-- Footer -->
+	 <div class="w3-auto">
+  <footer class="w3-container w3-padding-48 w3-text-grey w3-xlarge">
+  <p class="w3-text-white">
+  Seuraa meitä Facebookissa:<br>
+    <a href="https://www.facebook.com" target="_blank" class="w3-hover-text-white" style="text-decoration: none">
+	<span class="fa fa-facebook-official w3-hover-opacity" style="font-size:28px"></i> </a>
+	<a href="https://www.facebook.com" target="_blank" class="linkki w3-hover-opacity" style="text-decoration: none">Otto Ohjelmoija</a>
+	</p>
+  
+  <p class="w3-medium">
+  © Otto Ohjelmoija 2019 <br>
+  Neulastie 8 <br>
+  00140 Helsinki <br>
+  </p>
+  
+  <a href="#" class="w3-button w3-light-grey w3-large w3-padding-large w3-section">Sivun alkuun</a>
+  
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-white">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  </div>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
