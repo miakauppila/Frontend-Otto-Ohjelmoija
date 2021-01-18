@@ -1,5 +1,16 @@
-# Frontend-Otto-Ohjelmoija
-Harjoitustehtävä, jossa toteutettiin kotisivut kuvitteelliselle Otto Ohjelmoija -yritykselle.  
-Tekniikat: HTML, W3.CSS, JavaScript.  
+# Frontend website for Otto Ohjelmoija
 
-Sivujen pohjana käytin W3 templatea, jota lähdin muokkaamaan. Tarkoituksena oli tutustua ja valita jokin CSS framework ja harjoitella sivuston muokkaamista sekä oman koodin kirjoittamista. Erityisesti piti huomioida sivujen responsiivisuus ja käytettävyys. Sivujen käytettävyys tuli testata eri laitteilla ja Siteimprove Accessibility Checker – Chrome lisäosalla ja dokumentoida huomiot raporttiin.
+School project to create a responsive website for an imaginary company called Otto Ohjelmoija.  
+Creator: Mia Kauppila, autumn 2019  
+Tech: HTML, CSS, JavaScript.  
+
+## Notes
+- One task of the assignment was to get acquainted with CSS frameworks and choose a CSS framework for the site.
+- I used a W3.CSS template as a starting point for the site. 
+- Javascript was used in the projects that had to be included: Calculator, Robotto and Black Jack. 
+- Special attention on website responsiveness, usability and accessibility.  
+  - The usability of the site was tested with Chrome inspector and a free mobile page test tool.  
+  - The accessibility was analysed with Siteimprove Accessibility Checker plugin for Chrome. Detected issued were documented in a report by category (Error/Warning/Review) and fixed wherever possible.  
+
+Preview the page here: https://miakauppila.github.io/Frontend-Responsive-Otto/
+
